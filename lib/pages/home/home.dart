@@ -14,7 +14,7 @@ part 'widgets/news_page_view.dart';
 part 'widgets/favorites_float_button.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({super.key, NewsService? newsService}) : newsService = newsService ?? NewsServiceImpl();
+  const HomePage({super.key, required this.newsService});
 
   final NewsService newsService;
 
